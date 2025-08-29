@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%
+    // Java Code (Server-side)
+    String userName = "Visitor";
+    int year = java.time.Year.now().getValue();
+%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java + HTML + CSS Example</title>
+    <style>
+        /* CSS Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #2a5d84;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Structure with Embedded Java Output -->
+    <h1>Welcome, <%= userName %>!</h1>
+    <p>The current year is <%= year %>.</p>
+</body>
+</html>
